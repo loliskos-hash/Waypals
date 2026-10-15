@@ -19,12 +19,12 @@ Keine Werbung, keine Tracker.
 **Description (EN):**
 Waypals is your digital friend book for the road. Add the people you meet while travelling: where, when and how. See on the globe where they are and where they live. Reunion radar, passport stamps, trip recap, birthday reminders, a Circle to send friends challenges by carrier pigeon, three styles (Colourful, Minimal, Notebook), light and dark mode. No ads, no trackers.
 
-**Kategorie:** Reisen & Lokales (oder Lifestyle) · **Tags:** Reisen, Tagebuch, Freunde
+**Kategorie:** Soziales Netzwerk (oder Lifestyle) · **Tags:** Reisen, Soziales Netzwerk, Lifestyle
 **Altersfreigabe-Fragebogen:** Nutzer-generierte Inhalte: ja (Kreis: Namen, Fotos); keine Gewalt/Glücksspiel. Zielgruppe: 16+ (nicht an Kinder gerichtet).
-**Datenschutzerklärung-URL:** https://DEIN-NAME.github.io/REPO/datenschutz.html
+**Datenschutzerklärung-URL:** https://loliskos-hash.github.io/Waypals/datenschutz.html
 
 ## Formular „Datensicherheit“ (Orientierung, selbst prüfen)
-- Erhobene Daten: Name, E-Mail (Google-Anmeldung), Fotos, Nutzer-IDs, Inhalte der Einträge (App-Aktivität/Nachrichten)
+- Erhobene Daten: Name, E-Mail (Google-Anmeldung), Fotos, Nutzer-IDs, Inhalte der Einträge (App-Aktivität), Reisen und Challenges
 - Zweck: App-Funktionalität, Kontoverwaltung. Keine Werbung, kein Verkauf, kein Teilen mit Dritten außer Auftragsverarbeiter (Google/Firebase)
-- Verschlüsselt bei der Übertragung: ja · Löschung auf Anfrage: ja (in der App unter Einstellungen → Konto)
-- Auch Lösch-URL angeben: die Datenschutzseite (Kontakt-E-Mail)
+- Verschlüsselt bei der Übertragung: ja · Löschung auf Anfrage: ja (Anleitung: https://loliskos-hash.github.io/Waypals/loeschen.html)
+- Lösch-URL: https://loliskos-hash.github.io/Waypals/loeschen.html
