@@ -1,9 +1,11 @@
-/* TRAG HIER DEINE WERTE EIN (siehe ANLEITUNG.md, Schritt 1). Diese Werte sind nicht geheim. */
+/* Firebase-Web-Konfiguration (nicht geheim). */
 window.FIREBASE_CONFIG = {
-  apiKey: "DEIN_API_KEY",
-  authDomain: "DEIN-PROJEKT.firebaseapp.com",
-  projectId: "DEIN-PROJEKT",
-  appId: "DEINE_APP_ID"
+  apiKey: "AIzaSyD_d_fcU9Y7v6fnwtIfBNARkhvChTtkw-Y",
+  authDomain: "waypals-d3fca.firebaseapp.com",
+  projectId: "waypals-d3fca",
+  storageBucket: "waypals-d3fca.firebasestorage.app",
+  messagingSenderId: "767455047720",
+  appId: "1:767455047720:web:cce22223398be9ea56051d"
 };
 /* Angaben für Impressum/Datenschutz in der App (Pflicht, sobald du die App öffentlich anbietest). */
 window.WAYPALS_CONFIG = {
