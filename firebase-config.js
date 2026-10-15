@@ -7,5 +7,5 @@ window.FIREBASE_CONFIG = {
 };
 /* Angaben für Impressum/Datenschutz in der App (Pflicht, sobald du die App öffentlich anbietest). */
 window.WAYPALS_CONFIG = {
-  provider: { name: "Ludeldoo (Inhaber/in: DEIN VOLLER NAME)", address: "Straße Nr., PLZ Ort, Land", email: "deine@mailadresse.de" }
+  provider: { name: "Ludeldoo (Inhaber: Ludwig Essing)", address: "Segenstraße 1, 81735 München, Deutschland", email: "ludeldoo@gmail.com" }
 };
