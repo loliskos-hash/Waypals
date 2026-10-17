@@ -12,12 +12,14 @@ Waypals ist dein digitales Freundebuch für alles, was unterwegs passiert. Trag 
 • Reisepass mit Stempeln, Reiserückblick und Statistiken
 • Geburtstagserinnerungen
 • Kreis: Verbinde dich mit Freunden und schickt euch Challenges per Brieftaube
+• Taubendex: Sammle 3D-Tauben aller Länder mit lustigen Skins (Bier & Lederhose, Pastel de Nata, Baguette …) in 5 Seltenheiten, brüte sie mit Freunden und tausche sie beim Treffen
+• Wochenziel, Erfolge, Fotoalben und Erinnerungen als Kalenderdatei
 • Drei Styles (Bunt, Minimal, Notizbuch), hell und dunkel, Deutsch und Englisch
 • Backup als Datei, Anmeldung mit Google optional
 Keine Werbung, keine Tracker.
 
 **Description (EN):**
-Waypals is your digital friend book for the road. Add the people you meet while travelling: where, when and how. See on the globe where they are and where they live. Reunion radar, passport stamps, trip recap, birthday reminders, a Circle to send friends challenges by carrier pigeon, three styles (Colourful, Minimal, Notebook), light and dark mode. No ads, no trackers.
+Waypals is your digital friend book for the road. Add the people you meet while travelling: where, when and how. See on the globe where they are and where they live. Collect cute 3D pigeons from every country with funny skins in five rarities, breed them with friends and swap them when you meet. Reunion radar, passport stamps, trip recap, birthday reminders, a Circle to send friends challenges by carrier pigeon, three styles (Colourful, Minimal, Notebook), light and dark mode. No ads, no trackers.
 
 **Kategorie:** Soziales Netzwerk (oder Lifestyle) · **Tags:** Reisen, Soziales Netzwerk, Lifestyle
 **Altersfreigabe-Fragebogen:** Nutzer-generierte Inhalte: ja (Kreis: Namen, Fotos); keine Gewalt/Glücksspiel. Zielgruppe: 16+ (nicht an Kinder gerichtet).
