@@ -6489,6 +6489,36 @@ vest:[['SHELL(-q.y-.4)','#FFFFFF'],['SHELL2(max(.1-q.x,-q.y-.45))','#2F3035'],['
 apron:[['sdBox(q-vec3(0,-.15,.7),vec3(.45,.62,.05),.04)','#FFFFFF'],['SHELL3(max(abs(q.x-.4)-.06,-q.y-.2))','#FFFFFF']]
 };
 var P3_OUT={lederhose:{pt:2,a:'#FFFFFF',b:'#3D6FC4'},stripes:{pt:1,a:'#FFFFFF',b:'ACC'},poncho:{pt:4}};
+Object.assign(P3_HAT,{
+montera:[['sdEll(q-vec3(0,.25,0),vec3(.5,.28,.45))','#1a1a1a'],['sdSph(vec3(q.x,q.y,abs(q.z))-vec3(0,.3,.5),.2)','#1a1a1a'],['sdSph(vec3(q.x,q.y,abs(q.z))-vec3(0,.3,.58),.07)','#2a2a2a']],
+bowler:[['sdEll(q-vec3(0,.3,0),vec3(.56,.5,.56))','#1d1d22'],['sdCyl(q-vec3(0,.04,0),.04,.78)','#1d1d22'],['sdTor(q-vec3(0,.13,0),vec2(.52,.04))','#050508']],
+mountie:[['sdCyl(q-vec3(0,.05,0),.05,.92)','#9C2B2B'],['sdCC(q-vec3(0,.34,0),.34,.5,.4)','#9C2B2B'],['sdTor(q-vec3(0,.13,0),vec2(.5,.045))','#E5B83E']],
+mandarin:[['sdCC(q-vec3(0,.28,0),.28,.82,.4)','#C8102E'],['sdSph(q-vec3(0,.64,0),.1)','#FFD23F'],['sdTor(q-vec3(0,.03,0),vec2(.8,.05))','#FFD23F']],
+samba:[['sdCyl(q-vec3(0,.12,0),.12,.5)','#FFD23F'],['sdSph(q-vec3(.5,.15,0),.09)','#E8453C'],['sdEll(rx(q-vec3(0,.25,0),-1.1)-vec3(0,.5,0),vec3(.08,.5,.06))','#FF5A36'],['sdEll(rx(q-vec3(0,.25,0),-.72)-vec3(0,.5,0),vec3(.08,.54,.06))','#FFC93C'],['sdEll(rx(q-vec3(0,.25,0),-.36)-vec3(0,.5,0),vec3(.08,.58,.06))','#2EC4B6'],['sdEll(rx(q-vec3(0,.25,0),0.)-vec3(0,.5,0),vec3(.08,.62,.06))','#3A86FF'],['sdEll(rx(q-vec3(0,.25,0),.36)-vec3(0,.5,0),vec3(.08,.58,.06))','#2EC4B6'],['sdEll(rx(q-vec3(0,.25,0),.72)-vec3(0,.5,0),vec3(.08,.54,.06))','#FFC93C'],['sdEll(rx(q-vec3(0,.25,0),1.1)-vec3(0,.5,0),vec3(.08,.5,.06))','#FF5A36']],
+chullo:[['sdEll(q-vec3(0,.28,0),vec3(.58,.5,.58))','#D9393B'],['sdTor(q-vec3(0,.06,0),vec2(.55,.08))','#3E9B4A'],['sdTor(q-vec3(0,.3,0),vec2(.55,.05))','#2E7DD6'],['sdCap(vec3(q.x,q.y,abs(q.z)),vec3(0,.05,.55),vec3(0,-.5,.62),.12)','#F2B21B'],['sdSph(vec3(q.x,q.y,abs(q.z))-vec3(0,-.58,.64),.1)','#FFFFFF'],['sdSph(q-vec3(0,.78,0),.13)','#FFFFFF']],
+bush:[['sdCyl(q-vec3(0,.04,0),.04,.95)','#B58A4A'],['sdCC(q-vec3(0,.3,0),.3,.55,.42)','#B58A4A'],['sdTor(q-vec3(0,.1,0),vec2(.52,.05))','#5a3a1a'],['sdCap(q,vec3(.85,.0,0),vec3(.85,-.28,0),.03)','#8a6a3a'],['sdEll(q-vec3(.85,-.36,0),vec3(.06,.1,.06))','#D9B26A'],['sdCap(vec3(q.x,q.y,abs(q.z)),vec3(.6,0,.62),vec3(.6,-.28,.62),.03)','#8a6a3a'],['sdEll(vec3(q.x,q.y,abs(q.z))-vec3(.6,-.36,.62),vec3(.06,.1,.06))','#D9B26A'],['sdCap(vec3(q.x,q.y,abs(q.z)),vec3(0.,0,.9),vec3(0,-.28,.9),.03)','#8a6a3a'],['sdEll(vec3(q.x,q.y,abs(q.z))-vec3(0,-.36,.9),vec3(.06,.1,.06))','#D9B26A']],
+hachimaki:[['sdTor(q-vec3(0,.1,0),vec2(.58,.1))','#FFFFFF'],['sdEll(q-vec3(.62,.12,0),vec3(.06,.13,.13))','#BC002D'],['sdCap(vec3(q.x,q.y,abs(q.z)),vec3(-.55,.1,.1),vec3(-.95,-.15,.4),.06)','#FFFFFF']],
+tam:[['sdEll(q-vec3(.1,.18,0),vec3(.74,.22,.74))','PAT'],['sdSph(q-vec3(0,.4,0),.1)','#D61F2C']]
+});
+Object.assign(P3_PROP,{
+fan:[['max(sdCylZ(q-vec3(0,-.25,0),.03,.72),-(q.y+.25))','#C8102E'],['max(abs(sdTorZ(q-vec3(0,-.25,0),vec2(.7,.04))),-(q.y+.25))','#1a1a1a'],['sdCap(q,vec3(0,-.3,0),vec3(.5,.35,0),.025)','#1a1a1a'],['sdCap(q,vec3(0,-.3,0),vec3(-.5,.35,0),.025)','#1a1a1a']],
+umbrella:[['sdCap(q,vec3(0,-.85,0),vec3(0,.3,0),.035)','#222222'],['sdRC(q,vec3(0,.2,0),vec3(0,1.0,0),.16,.02)','#14193a'],['sdTorZ(q-vec3(.14,-.85,0),vec2(.14,.035))','#6b3d12']],
+flag:[['sdCap(q,vec3(-.55,-.8,0),vec3(-.55,.85,0),.035)','#8a6a3a'],['sdBox(q-vec3(.05,.5,0),vec3(.6,.36,.02),.01)','#FFFFFF'],['sdBox(q-vec3(.05,.78,.015),vec3(.6,.05,.02),0.)','#B22234'],['sdBox(q-vec3(.05,.56,.015),vec3(.6,.05,.02),0.)','#B22234'],['sdBox(q-vec3(.05,.34,.015),vec3(.6,.05,.02),0.)','#B22234'],['sdBox(q-vec3(-.28,.66,.02),vec3(.3,.2,.02),0.)','#3C3B6E']]
+});
+Object.assign(P3_BODY,{
+suit:[['SHELL(-q.y-.45)','#FFFFFF'],['sdRC(aq,vec3(0.),vec3(.12,-.42,.05),.27,.23)','#FFFFFF'],['SHELL2(max(.12-q.x,-q.y-.45))','#25252b'],['sdBox(q-vec3(0,.4,.76),vec3(.06,.32,.03),.02)','#111118'],['sdSph(q-vec3(.3,.1,.74),.035)','#C0C6D2'],['sdSph(q-vec3(.3,-.1,.76),.035)','#C0C6D2']],
+matador:[['SHELL(-q.y-.45)','#C8102E'],['sdRC(aq,vec3(0.),vec3(.12,-.42,.05),.27,.23)','#C8102E'],['SHELL3(max(abs(q.x-.12)-.05,-q.y-.45))','#E5B83E'],['sdEll(q-vec3(.66,.66,.04),vec3(.16,.08,.16))','#E5B83E'],['sdTor(q-vec3(0,.85,.1),vec2(.46,.06))','#E5B83E'],['sdBox(q-vec3(0,.7,.72),vec3(.06,.1,.03),.02)','#111118'],['sdSph(q-vec3(.34,.35,.72),.05)','#E5B83E'],['sdSph(q-vec3(.34,.05,.74),.05)','#E5B83E']],
+bandana:[['sdTor(q-vec3(0,.8,.1),vec2(.46,.1))','#C8102E'],['max(max(max(abs(q.x)-(q.y-.25)*.55,abs(q.z-.66)-.04),.25-q.y),q.y-.82)','#C8102E'],['sdSph(q-vec3(0,.6,.71),.04)','#FFFFFF'],['sdSph(q-vec3(.12,.7,.71),.035)','#FFFFFF']],
+happi:[['SHELL(-q.y-.55)','#2C5FB5'],['sdRC(aq,vec3(0.),vec3(.12,-.42,.05),.28,.24)','#2C5FB5'],['SHELL3(max(abs(q.x-.1)-.07,-q.y-.55))','#FFFFFF'],['SHELL2(abs(q.y+.15)-.09)','#1f1f24']],
+mountie:[['SHELL(-q.y-.5)','#C8102E'],['sdRC(aq,vec3(0.),vec3(.12,-.42,.05),.27,.23)','#C8102E'],['sdTor(q-vec3(0,.85,.08),vec2(.45,.07))','#1a1a1a'],['SHELL2(abs(q.y+.05)-.07)','#5a3a1a'],['sdBox(q-vec3(0,-.05,.76),vec3(.1,.08,.03),.02)','#FFD23F'],['sdSph(q-vec3(0,.4,.76),.04)','#FFD23F'],['sdSph(q-vec3(0,.2,.78),.04)','#FFD23F']],
+tartan:[['SHELL(-q.y-.45)','#FFFFFF'],['sdRC(aq,vec3(0.),vec3(.12,-.42,.05),.27,.23)','#FFFFFF'],['sdCC(q-vec3(0,-.62,0),.34,1.0,.82)','PAT'],['SHELL3(abs(q.x+q.y*.8-.5)-.1)','PAT']],
+sherwani:[['SHELL(-q.y-.75)','#E8802B'],['sdRC(aq,vec3(0.),vec3(.12,-.42,.05),.27,.23)','#E8802B'],['SHELL3(max(abs(q.x-.1)-.06,-q.y-.75))','#8B1E2B'],['sdTor(q-vec3(0,.85,.08),vec2(.45,.07))','#FFD23F'],['sdSph(q-vec3(0,.5,.76),.045)','#8B1E2B'],['sdSph(q-vec3(0,.2,.8),.045)','#8B1E2B'],['sdSph(q-vec3(0,-.1,.8),.045)','#8B1E2B']],
+tang:[['SHELL(-q.y-.5)','#D01C1C'],['sdRC(aq,vec3(0.),vec3(.12,-.42,.05),.27,.23)','#D01C1C'],['sdTor(q-vec3(0,.85,.08),vec2(.44,.07))','#FFD23F'],['sdSph(q-vec3(0,.6,.76),.05)','#FFD23F'],['sdSph(q-vec3(0,.3,.8),.05)','#FFD23F'],['sdSph(q-vec3(0,0.,.8),.05)','#FFD23F'],['sdSph(q-vec3(.4,.4,.68),.07)','#FFD23F'],['sdSph(q-vec3(.4,.0,.72),.07)','#FFD23F']],
+canarinha:[['SHELL(-q.y-.4)','#FFD84A'],['sdRC(aq,vec3(0.),vec3(.12,-.42,.05),.27,.23)','#FFD84A'],['sdTor(q-vec3(0,.85,.08),vec2(.45,.07))','#1C9A4B'],['sdEll(q-vec3(.28,.4,.72),vec3(.1,.1,.03))','#2D5BB8'],['SHELL2(q.y+.4)','#2D5BB8']],
+collar:[['sdTor(q-vec3(0,.78,.1),vec2(.5,.14))','#E5B83E'],['sdTor(q-vec3(0,.7,.1),vec2(.6,.07))','#2E7DD6'],['sdTor(q-vec3(0,.6,.1),vec2(.68,.05))','#C8102E'],['sdSph(q-vec3(0,.62,.76),.06)','#C8102E'],['sdSph(q-vec3(.3,.58,.7),.06)','#2E7DD6']],
+toga:[['SHELL(-q.y-.6)','#F8F4EA'],['SHELL3(abs(q.x*.8+q.y*.7-.2)-.12)','#F2E6C8'],['sdSph(q-vec3(.5,.7,.3),.08)','#FFD23F']]
+});
+Object.assign(P3_OUT,{tartan:{pt:5,a:'#C8102E',b:'#14502F'}});
 function p3Hex(h){
   var m=/^#([0-9a-f]{3,6})$/i.exec(h);if(m){var s=m[1];if(s.length===3)s=s[0]+s[0]+s[1]+s[1]+s[2]+s[2];return [parseInt(s.slice(0,2),16)/255,parseInt(s.slice(2,4),16)/255,parseInt(s.slice(4,6),16)/255]}
   m=/hsl\((\d+)\s+(\d+)%\s+(\d+)%\)/.exec(h);if(m){var H=+m[1]/360,S=+m[2]/100,Lm=+m[3]/100,a=S*Math.min(Lm,1-Lm);function f(n){var k=(n+H*12)%12;return Lm-a*Math.max(-1,Math.min(k-3,9-k,1))}return [f(0),f(8),f(4)]}
@@ -6539,7 +6569,7 @@ function p3Gen(skin){
   'const vec3 R0='+rb[0]+',R1='+rb[1]+',R2='+rb[2]+',R3='+rb[3]+',R4='+rb[4]+';',
   'const vec3 FATV=vec3('+F(.88*G.fat)+','+F(1.0*G.fat*G.fh)+','+F(.78*G.fat)+');const float HS='+F(G.hs)+',BL='+F(G.bl)+',TL='+F(G.tl)+',LG='+F(G.legs)+',FX='+F(G.fat)+';',
   pal,
-  'vec3 patCol(vec3 b){if(PT<1.5&&PT>.5)return mix(PA,PB,step(.5,fract(b.y*3.3)));if(PT>1.5&&PT<2.5){float a=step(.5,fract(b.x*3.4+.1)),c=step(.5,fract(b.y*3.4));float s=a+c;return s<.5?PA:(s<1.5?mix(PA,PB,.55):PB);}if(PT>3.5){float k=mod(floor(b.y*3.2+3.),5.);vec3 c=R0;if(k>.5)c=R1;if(k>1.5)c=R2;if(k>2.5)c=R3;if(k>3.5)c=R4;return c;}return PA;}',
+  'vec3 patCol(vec3 b){if(PT<1.5&&PT>.5)return mix(PA,PB,step(.5,fract(b.y*3.3)));if(PT>1.5&&PT<2.5){float a=step(.5,fract(b.x*3.4+.1)),c=step(.5,fract(b.y*3.4));float s=a+c;return s<.5?PA:(s<1.5?mix(PA,PB,.55):PB);}if(PT>4.5){float a=step(.5,fract(b.x*3.6)),c=step(.5,fract(b.y*3.6)),s=a+c;return s<.5?PA:(s<1.5?mix(PA,PB,.5):PB);}if(PT>3.5){float k=mod(floor(b.y*3.2+3.),5.);vec3 c=R0;if(k>.5)c=R1;if(k>1.5)c=R2;if(k>2.5)c=R3;if(k>3.5)c=R4;return c;}return PA;}',
   'vec2 opU(vec2 a,vec2 b){return a.x<b.x?a:b;}',
   'float dTorso(vec3 q){float d=sdEll(q,FATV);return smin(d,sdEll(q-vec3(0.,.22,.2),FATV*vec3(.82,.72,.8)),.3);}',
   'const float PS=.72;vec3 hatO,propO,qq,H,aq;',
