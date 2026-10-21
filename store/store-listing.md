@@ -26,10 +26,10 @@ Waypals is your digital friend book for the road. Add the people you meet while 
 
 **Kategorie:** Soziales Netzwerk (oder Lifestyle) · **Tags:** Reisen, Soziales Netzwerk, Lifestyle
 **Altersfreigabe-Fragebogen:** Nutzer-generierte Inhalte: ja (Kreis: Namen, Fotos); keine Gewalt/Glücksspiel. Zielgruppe: 16+ (nicht an Kinder gerichtet).
-**Datenschutzerklärung-URL:** https://loliskos-hash.github.io/Waypals/datenschutz.html
+**Datenschutzerklärung-URL:** https://loliskos-hash.github.io/waypals-web/datenschutz.html
 
 ## Formular „Datensicherheit“ (Orientierung, selbst prüfen)
 - Erhobene Daten: Name, E-Mail (Google-Anmeldung), Fotos, Nutzer-IDs, Inhalte der Einträge (App-Aktivität), Reisen und Challenges
 - Zweck: App-Funktionalität, Kontoverwaltung. Keine Werbung, kein Verkauf, kein Teilen mit Dritten außer Auftragsverarbeiter (Google/Firebase)
-- Verschlüsselt bei der Übertragung: ja · Löschung auf Anfrage: ja (Anleitung: https://loliskos-hash.github.io/Waypals/loeschen.html)
-- Lösch-URL: https://loliskos-hash.github.io/Waypals/loeschen.html
+- Verschlüsselt bei der Übertragung: ja · Löschung auf Anfrage: ja (Anleitung: https://loliskos-hash.github.io/waypals-web/loeschen.html)
+- Lösch-URL: https://loliskos-hash.github.io/waypals-web/loeschen.html
