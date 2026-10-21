@@ -1,10 +1,11 @@
-# Google Play Veröffentlichung – Waypals (Stand 19.10.2026)
+# Google Play Veröffentlichung – Waypals (Stand 21.10.2026)
 
-Bereit (von mir erledigt): Texte, Grafiken, Formular-Antworten, Datenschutz- und Löschseite, Manifest, Icons, assetlinks-Vorlage.
-Von dir zu klicken (kann ich nicht: kein Zugang zu deinem Play-Konto, kein Android-Build hier): Schritte A–F.
+Bereit (von mir erledigt): Texte (store-listing.md), neue Screenshots (Handy + Tablet, mit 3D-Figuren und Quest-Werkstatt), Feature-Grafik, Datenschutz- und Löschseite, Manifest, Icons, Bubblewrap-Konfiguration (store/twa/twa-manifest.json), Vorlage für die Haupt-Domain (store/root-site/).
+Von dir zu klicken (kein Zugang zu deinem Play-Konto, kein Android-Build hier): Schritte A–F.
 
-## Vorab: Namensentscheidung
-Siehe Markenprüfung: „Waypals“ kann mit bestehenden Marken kollidieren. Entscheide vor dem Anlegen der App – der Name lässt sich später nur eingeschränkt ändern. Der Paketname (z. B. de.ludeldoo.waypals) ist dauerhaft.
+## WICHTIG vorab (zwei Punkte)
+1. **Name:** „Waypals“ kann mit einer bestehenden Marke kollidieren (Klasse 42, Delhi). Entscheide vor dem Anlegen der App. Der Paketname (Vorschlag: de.ludeldoo.waypals) ist danach dauerhaft; der Anzeigename lässt sich ändern.
+2. **assetlinks.json muss auf der Haupt-Domain liegen:** Google prüft https://loliskos-hash.github.io/.well-known/assetlinks.json (nicht /Waypals/…). Dafür brauchst du bei GitHub ein zweites Repository mit dem Namen **loliskos-hash.github.io** (öffentlich), in das der Inhalt von `store/root-site/` kommt (inkl. `.well-known` und `.nojekyll`). Ohne das läuft die App im Test trotzdem, zeigt aber oben eine Browserleiste. Mit eigener Domain entfällt das Problem.
 
 ## A. Konto
 1. https://play.google.com/console → Entwicklerkonto (einmalig 25 US-$), Typ „Privatperson“ oder „Organisation“ (Ludeldoo). Identitätsprüfung (Ausweis, ggf. D-U-N-S bei Organisation).
@@ -17,11 +18,11 @@ Siehe Markenprüfung: „Waypals“ kann mit bestehenden Marken kollidieren. Ent
 4. SHA-256-Fingerabdruck aus der Zip-Datei (signing-key-info.txt) notieren.
 
 ## C. assetlinks (damit die App ohne Browserleiste läuft)
-Schick mir Paketname + SHA-256 (und den Fingerabdruck der Play-App-Signatur aus Play Console → Einrichtung → App-Integrität, sobald vorhanden). Ich trage beides in .well-known/assetlinks.json ein und pushe. Aktuell stehen dort Platzhalter.
+Schick mir Paketname + SHA-256 (ich trage sie in store/root-site/.well-known/assetlinks.json und in .well-known/assetlinks.json ein) (und den Fingerabdruck der Play-App-Signatur aus Play Console → Einrichtung → App-Integrität, sobald vorhanden). Ich trage beides in .well-known/assetlinks.json ein und pushe. Aktuell stehen dort Platzhalter.
 
 ## D. App anlegen
 1. Play Console → App erstellen: Name, Sprache Deutsch, App, kostenlos.
-2. Store-Eintrag: Texte aus store-listing.md; Icon app-icon-512.png; Feature-Grafik feature-graphic-1024x500.png; Handy-Screenshots store/promo/ (8 Stück, 1080×1920 mit Rahmen) oder screenshot-1..4; Tablet-Screenshots store/promo-tablet/ (7"/10").
+2. Store-Eintrag: Texte aus store-listing.md; Icon app-icon-512.png; Feature-Grafik feature-graphic-1024x500.png; Handy-Screenshots store/promo/ (8 Stück, 1080×1920 mit Rahmen); Tablet-Screenshots store/promo-tablet/ (7"/10").
 3. Kategorie: Soziales Netzwerk oder Lifestyle. Kontakt-E-Mail: laura.kaesenheimer@gmail.com (oder Firmenadresse).
 4. Datenschutz-URL: https://loliskos-hash.github.io/Waypals/datenschutz.html
 
@@ -39,3 +40,11 @@ Schick mir Paketname + SHA-256 (und den Fingerabdruck der Play-App-Signatur aus 
 ## Technisch bekannt
 - Die 3D-Tauben nutzen WebGL; auf sehr alten Geräten ohne WebGL fallen sie automatisch auf die 2D-Grafik zurück.
 - Google-Anmeldung: In Firebase die autorisierten Domains prüfen (loliskos-hash.github.io). Bei der Android-App ggf. die Play-Signatur-SHA-1 in Firebase eintragen, falls die Anmeldung dort scheitert.
+
+## Alternative zu PWABuilder: Bubblewrap
+`npm i -g @bubblewrap/cli`, dann `bubblewrap init --manifest=https://loliskos-hash.github.io/Waypals/manifest.webmanifest` bzw. mit store/twa/twa-manifest.json, `bubblewrap build` erzeugt app-release-bundle.aab und den Fingerabdruck (`bubblewrap fingerprint`).
+
+## Vor dem Upload prüfen
+- App im Chrome auf dem Handy öffnen: https://loliskos-hash.github.io/Waypals/ → „Zur Startseite hinzufügen“ funktioniert, 3D-Figuren erscheinen. Bei Rucklern: Einstellungen → 3D-Figuren aus.
+- Sprache wechseln (7 Sprachen) und einmal durch alle Tabs gehen.
+- Google-Anmeldung testen (Firebase: autorisierte Domain loliskos-hash.github.io).

@@ -1,0 +1,22 @@
+{
+  "packageId": "de.ludeldoo.waypals",
+  "host": "loliskos-hash.github.io",
+  "name": "Waypals – Reise-Freundebuch",
+  "launcherName": "Waypals",
+  "display": "standalone",
+  "orientation": "portrait",
+  "themeColor": "#0B7F78",
+  "navigationColor": "#0B7F78",
+  "backgroundColor": "#FFF8EE",
+  "startUrl": "/Waypals/index.html",
+  "iconUrl": "https://loliskos-hash.github.io/Waypals/icons/icon-512.png",
+  "maskableIconUrl": "https://loliskos-hash.github.io/Waypals/icons/maskable-512.png",
+  "webManifestUrl": "https://loliskos-hash.github.io/Waypals/manifest.webmanifest",
+  "appVersion": "1.0.0",
+  "appVersionCode": 1,
+  "minSdkVersion": 21,
+  "enableNotifications": false,
+  "fallbackType": "customtabs",
+  "splashScreenFadeOutDuration": 300,
+  "signingKey": { "path": "./waypals.keystore", "alias": "waypals" }
+}
