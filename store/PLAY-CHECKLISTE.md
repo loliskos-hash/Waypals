@@ -22,7 +22,7 @@ Schick mir Paketname + SHA-256 (ich trage sie in store/root-site/.well-known/ass
 
 ## D. App anlegen
 1. Play Console → App erstellen: Name, Sprache Deutsch, App, kostenlos.
-2. Store-Eintrag: Texte aus store-listing.md; Icon app-icon-512.png; Feature-Grafik feature-graphic-1024x500.png; Handy-Screenshots store/promo/ (8 Stück, 1080×1920 mit Rahmen); Tablet-Screenshots store/promo-tablet/ (7"/10").
+2. Store-Eintrag: Texte aus store-listing.md; Icon icons/icon-512.png; Feature-Grafik feature-graphic-1024x500.png; Handy-Screenshots store/promo/ (8 Stück, 1080×1920 mit Rahmen); Tablet-Screenshots store/promo-tablet/ (7"/10").
 3. Kategorie: Soziales Netzwerk oder Lifestyle. Kontakt-E-Mail: laura.kaesenheimer@gmail.com (oder Firmenadresse).
 4. Datenschutz-URL: https://loliskos-hash.github.io/Waypals/datenschutz.html
 
